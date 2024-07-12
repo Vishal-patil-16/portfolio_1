@@ -4,6 +4,7 @@
     <title>Vishal D. Patil</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -106,6 +107,17 @@
         }
     }
 
+	@media (max-width: 768px) {
+    #name-glow {
+        font-size: 1.5em;
+    }
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+
 	
 0% {
       text-shadow: 0 0 5px #fff200, 0 0 10px #a6ff00, 0 0 15px #00e1ff, 0 0 20px #00ffff, 0 0 30px #00bbff, 0 0 40px #0048ff, 0 0 50px #a600ff;
@@ -161,123 +173,110 @@
 	  
 <!-- Home -->
 <section id="home-section" class="hero">
-  <div class="home-slider owl-carousel">
-    <div class="slider-item ">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	<div class="home-slider owl-carousel">
+	  <div class="slider-item">
+		<div class="overlay"></div>
+		<div class="container">
+		  <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
 			<div class="one-third js-fullheight order-md-last img" 
-			style="background-image:url(images/bg_11.png);  transition: all 0.3s ease;"
-			onmouseover="this.style.filter='blur(2px) brightness(1.2)'; this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 50px rgba(255, 255, 255, 0.7)';"
-			onmouseout="this.style.filter='blur(10px)'; this.style.transform='scale(1)'; this.style.boxShadow='none';">
-		 <div class="overlay"></div>
-	   </div>
-	   
-          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-            
-			<div class="text">
-				<span class="subheading"><h3 >Hello !</h3></span>
-				
+			  style="background-image:url(images/bg_11.png); background-size: cover; background-position: center; transition: all 0.3s ease;"
+			  onmouseover="this.style.filter='blur(2px) brightness(1.2)'; this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 50px rgba(255, 255, 255, 0.7)';"
+			  onmouseout="this.style.filter='blur(10px)'; this.style.transform='scale(1)'; this.style.boxShadow='none';">
+			  <div class="overlay"></div>
+			</div>
+			
+			<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }" style="padding: 20px;">
+			  <div class="text">
+				<span class="subheading"><h3>Hello!</h3></span>
 				<h1 class="mb-4 mt-3">
-					<span id="name-glow" style="color: #ff9800; text-shadow: 0 0 5px #ff5900, 0 0 15px #ff0000; position: relative; display: inline-block; font-size: 1.5em; animation: floating 5s infinite;">
-						Vishal Patil
-					</span>
+				  <span id="name-glow" style="color: #ff9800; text-shadow: 0 0 5px #ff5900, 0 0 15px #ff0000; position: relative; display: inline-block; font-size: 2em; animation: floating 5s infinite;">
+					Vishal Patil
+				  </span>
 				</h1>
-
-              <!-- Element to contain animated typing -->
-              <span id="typing-animation"></span>
-
-              <script>
-				// Initialize the typing animation
-				const typingAnimationElement = document.getElementById('typing-animation');
-			  
-				// Create an array of typing text
-				const typingTexts = [
-				  'Full ',
-				  'Stack ',
-				  'Developer ',
-				  'A ',
-				  'Software ',
-				  'Developer ',
-				];
-			  
-				// Apply inline styles for smoothness and glow effect
-				typingAnimationElement.style.fontFamily = "'Courier New', Courier, monospace";
-				typingAnimationElement.style.fontSize = "24px";
-				typingAnimationElement.style.fontWeight = "bold";
-				typingAnimationElement.style.color = "#fff";
-				typingAnimationElement.style.textShadow = "0 0 5px #00f, 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f";
-				typingAnimationElement.style.whiteSpace = "nowrap";
-				typingAnimationElement.style.overflow = "hidden";
-				typingAnimationElement.style.borderRight = ".15em solid orange";
-				typingAnimationElement.style.animation = "blink-caret .75s step-end infinite";
-			  
-				// Keyframes for blinking caret
-				const styleSheet = document.createElement("style");
-				styleSheet.type = "text/css";
-				styleSheet.innerText = `
-				  @keyframes blink-caret {
-					from, to { border-color: transparent }
-					50% { border-color: orange; }
-				  }
-				`;
-				document.head.appendChild(styleSheet);
-			  
-				function playTypingAnimation(text) {
-				  for (let i = 0; i < text.length; i++) {
+  
+				<!-- Element to contain animated typing -->
+				<span id="typing-animation"></span>
+  
+				<script>
+				  // Initialize the typing animation
+				  const typingAnimationElement = document.getElementById('typing-animation');
+				
+				  // Create an array of typing text
+				  const typingTexts = [
+					'Full ',
+					'Stack ',
+					'Developer ',
+					'A ',
+					'Software ',
+					'Developer ',
+				  ];
+				
+				  // Apply inline styles for smoothness and glow effect
+				  typingAnimationElement.style.fontFamily = "'Courier New', Courier, monospace";
+				  typingAnimationElement.style.fontSize = "24px";
+				  typingAnimationElement.style.fontWeight = "bold";
+				  typingAnimationElement.style.color = "#fff";
+				  typingAnimationElement.style.textShadow = "0 0 5px #00f, 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f";
+				  typingAnimationElement.style.whiteSpace = "nowrap";
+				  typingAnimationElement.style.overflow = "hidden";
+				  typingAnimationElement.style.borderRight = ".15em solid orange";
+				  typingAnimationElement.style.animation = "blink-caret .75s step-end infinite";
+				
+				  // Keyframes for blinking caret
+				  const styleSheet = document.createElement("style");
+				  styleSheet.type = "text/css";
+				  styleSheet.innerText = `
+					@keyframes blink-caret {
+					  from, to { border-color: transparent }
+					  50% { border-color: orange; }
+					}
+				  `;
+				  document.head.appendChild(styleSheet);
+				
+				  function playTypingAnimation(text) {
+					for (let i = 0; i < text.length; i++) {
+					  setTimeout(() => {
+						typingAnimationElement.textContent += text[i];
+					  }, i * 200);
+					}
+				
 					setTimeout(() => {
-					  typingAnimationElement.textContent += text[i];
-					}, i * 200);
+					  typingAnimationElement.textContent = '';
+					  playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+					}, text.length * 200 + 100); // Additional delay before the next text starts
 				  }
-			  
-				  setTimeout(() => {
-					typingAnimationElement.textContent = '';
-					playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-				  }, text.length * 200 + 100); // Additional delay before the next text starts
-				}
-			  
-				playTypingAnimation(typingTexts[0]);
-			  </script>
-              <br>
-              <br>
-              <h2>A Devloper</h2>
-			  <br><br>
-              <p>
-				<!--<a href="https://github.com/Vishal-sawnat-16" 
-				   class="btn btn-primary py-3 px-4" 
-				   style="position: relative; display: inline-block; text-decoration: none;color: #fff; padding: 10px 20px;"
-				   onmouseover="this.style.boxShadow='0 0 20px #fff, 0 0 30px #ff007f, 0 0 40px #ff007f, 0 0 50px #ff007f, 0 0 60px #ff007f, 0 0 70px #ff007f'; this.style.textDecoration='none'; this.style.color='#fff';"
-				   onmouseout="this.style.boxShadow='none';">
-				   My Github
-				</a> !-->
-
-				<a href="https://github.com/Vishal-sawnat-16" 
-				   class="btn btn-white btn-outline-white py-3 px-4" 
-				   style="position: relative; display: inline-block; text-decoration: none; transition: all 0.3s ease-in-out;  color: #fff; padding: 10px 20px;"
-				   
-				   onmouseover="this.style.boxShadow='0 0 20px #fff, 0 0 30px #ff007f, 0 0 40px #ff007f, 0 0 50px #ff007f, 0 0 60px #ff007f, 0 0 70px #ff007f'; this.style.textDecoration='none'; this.style.color='#fff';"
-				   onmouseout="this.style.boxShadow='none';"> 
-				   <!-- <transition: all 0.3s ease-in-out; animation: floating 3s infinite ease-in-out;"> -->
-				   My Github
-				</a>
-
-				<a href="https://www.linkedin.com/in/vishal-patil-8344bb252/" 
-				   class="btn btn-white btn-outline-white py-3 px-4" 
-				   style="position: relative; display: inline-block; text-decoration: none; transition: all 0.3s ease-in-out;  color: #fff; padding: 10px 20px;"
-				   
-				   onmouseover="this.style.boxShadow='0 0 20px #fff, 0 0 30px #ff007f, 0 0 40px #ff007f, 0 0 50px #ff007f, 0 0 60px #ff007f, 0 0 70px #ff007f'; this.style.textDecoration='none'; this.style.color='#fff';"
-				   onmouseout="this.style.boxShadow='none';"> 
-				   <!-- <transition: all 0.3s ease-in-out; animation: floating 3s infinite ease-in-out;"> -->
-				   My LinkedIn
-				</a>
-			  </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+				
+				  playTypingAnimation(typingTexts[0]);
+				</script>
+				<br>
+				<br>
+				<h2>A Developer</h2>
+				<br><br>
+				<p>
+				  <a href="https://github.com/Vishal-sawnat-16" 
+					 class="btn btn-white btn-outline-white py-3 px-4" 
+					 style="position: relative; display: inline-block; text-decoration: none; transition: all 0.3s ease-in-out; color: #fff; padding: 10px 20px;"
+					 onmouseover="this.style.boxShadow='0 0 20px #fff, 0 0 30px #ff007f, 0 0 40px #ff007f, 0 0 50px #ff007f, 0 0 60px #ff007f, 0 0 70px #ff007f'; this.style.textDecoration='none'; this.style.color='#fff';"
+					 onmouseout="this.style.boxShadow='none';"> 
+					 My Github
+				  </a>
+  
+				  <a href="https://www.linkedin.com/in/vishal-patil-8344bb252/" 
+					 class="btn btn-white btn-outline-white py-3 px-4" 
+					 style="position: relative; display: inline-block; text-decoration: none; transition: all 0.3s ease-in-out; color: #fff; padding: 10px 20px;"
+					 onmouseover="this.style.boxShadow='0 0 20px #fff, 0 0 30px #ff007f, 0 0 40px #ff007f, 0 0 50px #ff007f, 0 0 60px #ff007f, 0 0 70px #ff007f'; this.style.textDecoration='none'; this.style.color='#fff';"
+					 onmouseout="this.style.boxShadow='none';"> 
+					 My LinkedIn
+				  </a>
+				</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
 
  
 <!-- about -->
@@ -441,12 +440,15 @@
 									<span>&nbsp; Projects completed</span>
 								</p>
 								<br><br>
-								<a href="https://github.com/Vishal-sawnat-16" class="btn btn-primary py-3 px-4" 
-				  					 style="position: relative; display: inline-block; text-decoration: none;color: #fff; padding: 10px 20px;"
-				   					onmouseover="this.style.boxShadow='0 0 20px #fff, 0 0 30px #ff007f, 0 0 40px #ff007f, 0 0 50px #ff007f, 0 0 60px #ff007f, 0 0 70px #ff007f'; this.style.textDecoration='none'; this.style.color='#fff';"
-				   					onmouseout="this.style.boxShadow='none';">
-				  					 Github
-								</a>
+								<div style="text-align: center;">
+									<a href="https://github.com/Vishal-sawnat-16" class="btn btn-primary py-3 px-4" 
+										style="position: relative; display: inline-block; text-decoration: none; color: #fff; padding: 10px 20px;"
+										onmouseover="this.style.boxShadow='0 0 20px #fff, 0 0 30px #ff007f, 0 0 40px #ff007f, 0 0 50px #ff007f, 0 0 60px #ff007f, 0 0 70px #ff007f'; this.style.textDecoration='none'; this.style.color='#fff';"
+										onmouseout="this.style.boxShadow='none';">
+										Github
+									</a>
+								</div>
+								
 							</div>
 						</div>
 					</div>
