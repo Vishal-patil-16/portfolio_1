@@ -3,7 +3,8 @@
   <head>
     <title>Vishal D. Patil</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> !-->
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -117,6 +118,13 @@
     }
 }
 
+.about-img:hover {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 1); /* Adjust the shadow color and size as desired */
+  }
+
+  .about-img:hover img {
+    transform: scale(1.1); /* Adjust the scale factor for the image on hover */
+  }
 
 	
 0% {
@@ -290,9 +298,12 @@
 							<div class="overlay">
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/about-me.jpg" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
+										<div class="about-img" style="box-shadow: 0 0 40px rgb(255, 255, 255); border-radius: 100%; overflow: hidden; transition: box-shadow 0.3s;">
+											<img src="images/about-me.jpg" class="img-fluid rounded-circle" alt="Portrait of me" style="transition: transform 0.3s;">
+										</div>
+										
+										
+										  
 									</div>
 									<!-- Details next to profile image -->
 									<div class="col-sm-6 col-md-7">
@@ -387,9 +398,22 @@
 											aria-valuemax="100"></div>
 									</div>
 
+									<br>
+									<br>
+									<br>
+
+									<div style="text-align: center;">
+										<a href="https://github.com/Vishal-sawnat-16" class="btn btn-primary py-3 px-4" 
+											style="position: relative; display: inline-block; text-decoration: none; color: #fff; padding: 10px 20px;"
+											onmouseover="this.style.boxShadow='0 0 20px #fff, 0 0 30px #ff007f, 0 0 40px #ff007f, 0 0 50px #ff007f, 0 0 60px #ff007f, 0 0 70px #ff007f'; this.style.textDecoration='none'; this.style.color='#fff';"
+											onmouseout="this.style.boxShadow='none';">
+											Github
+										</a>
+									</div>
+
 								</div>
 							</div>
-						</div>
+						</div>                    
 					</div>
 					
 					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
@@ -416,7 +440,7 @@
 									 At Numetry Technologies, I co-developed an online course platform using React.js and MySQL, boosting user engagement and learning outcomes. My previous roles at Britannia Industries Ltd and FirstCry Industry saw significant achievements, such as reducing data entry errors by 40%. 
 									  <br><br>
 									  Beyond technical skills, I have demonstrated leadership in projects and extra-curricular activities, including leading fundraising events and playing multiple musical instruments. I am fluent in English, Hindi, and Marathi, with elementary proficiency in Japanese, and hold certifications in C++, Java, Linux, Cybersecurity, and MySQL.
-                                    <Br></Br>
+                                    <Br>
 									I am passionate about leveraging technology to solve real-world problems and am committed to continuous learning and growth in the field of computer science and development.
 									</p>
 
@@ -431,8 +455,6 @@
 								</ul>
 							</div>
 						</div>
-
-
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
 								<p class="mb-4">
@@ -440,24 +462,19 @@
 									<span>&nbsp; Projects completed</span>
 								</p>
 								<br><br>
-								<div style="text-align: center;">
-									<a href="https://github.com/Vishal-sawnat-16" class="btn btn-primary py-3 px-4" 
-										style="position: relative; display: inline-block; text-decoration: none; color: #fff; padding: 10px 20px;"
-										onmouseover="this.style.boxShadow='0 0 20px #fff, 0 0 30px #ff007f, 0 0 40px #ff007f, 0 0 50px #ff007f, 0 0 60px #ff007f, 0 0 70px #ff007f'; this.style.textDecoration='none'; this.style.color='#fff';"
-										onmouseout="this.style.boxShadow='none';">
-										Github
-									</a>
-								</div>
 								
 							</div>
+							
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="underline"></div>
 		</div>
+		
     </section>
 
-
+	
 
 	<!-- Resume -->
     <section class="ftco-section ftco-no-pb" id="resume-section">
@@ -479,8 +496,6 @@
 					</p>
 				</div>
 			</div>
-			
-			
 			
 
 		<div class="">
