@@ -269,7 +269,110 @@
     fixedContentPos: false
   });
 
+  document.addEventListener('DOMContentLoaded', function () {
+	const stars = document.querySelectorAll('.rating .fa-star');
+	
+	stars.forEach(star => {
+	  star.addEventListener('mouseover', function () {
+		highlightStars(star.dataset.rating);
+	  });
 
+	  star.addEventListener('mouseout', function () {
+		resetStars();
+	  });
+
+	  star.addEventListener('click', function () {
+		selectStars(star.dataset.rating);
+	  });
+	});
+
+	function highlightStars(rating) {
+	  stars.forEach(star => {
+		if (star.dataset.rating <= rating) {
+		  star.style.color = '#ffcc00';
+		  star.style.textShadow = '0 0 20px #ffcc00';
+		  star.style.transform = 'translateY(-10px)';
+		} else {
+		  star.style.color = '#ccc';
+		  star.style.textShadow = 'none';
+		  star.style.transform = 'none';
+		}
+	  });
+	}
+
+	function resetStars() {
+	  stars.forEach(star => {
+		if (!star.classList.contains('selected')) {
+		  star.style.color = '#ccc';
+		  star.style.textShadow = 'none';
+		  star.style.transform = 'none';
+		}
+	  });
+	}
+
+	function selectStars(rating) {
+	  stars.forEach(star => {
+		if (star.dataset.rating <= rating) {
+		  star.classList.add('selected');
+		  star.style.color = '#ffcc00';
+		  star.style.textShadow = '0 0 20px #ffcc00';
+		  star.style.transform = 'translateY(-10px)';
+		} else {
+		  star.classList.remove('selected');
+		  star.style.color = '#ccc';
+		  star.style.textShadow = 'none';
+		  star.style.transform = 'none';
+		}
+	  });
+	}
+  });
+
+   // Function to set the rating when a star is clicked
+   function setRating(rating) {
+	var stars = document.querySelectorAll('.rating .fa-star');
+	
+	// Remove 'checked' class from all stars
+	stars.forEach(function(star) {
+		star.classList.remove('checked');
+		star.style.color = '#ccc'; // Reset color
+	});
+	
+	// Add 'checked' class to the clicked star and stars before it
+	for (var i = 0; i < rating; i++) {
+		stars[i].classList.add('checked');
+		stars[i].style.color = '#ff8d02'; // Change color for selected stars
+	}
+}
+
+// Function to submit the rating
+function submitRating() {
+	var stars = document.querySelectorAll('.rating .fa-star');
+
+	// Find the selected rating
+	var selectedRating = 0;
+	for (var i = 0; i < stars.length; i++) {
+		if (stars[i].classList.contains('checked')) {
+			selectedRating = stars[i].getAttribute('data-rating');
+			break;
+		}
+	}
+
+	// If no rating is selected, show an error message
+	if (selectedRating === 0) {
+		document.getElementById('result').innerHTML = 'Please select a rating!';
+		return;
+	}
+
+	// Perform your submit logic here (e.g., AJAX request)
+	// For demonstration, we'll just show the selected rating
+	document.getElementById('result').innerHTML = 'Rating submitted: ' + selectedRating;
+
+	// Reset stars (optional)
+	stars.forEach(function(star) {
+		star.classList.remove('checked');
+		star.style.color = '#ccc';
+	});
+}
 
 
 

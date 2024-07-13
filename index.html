@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -107,6 +108,8 @@
             transform: translateY(0);
         }
     }
+
+
 
 	@media (max-width: 768px) {
     #name-glow {
@@ -894,7 +897,7 @@
 					<h3 class="mb-4">Download Resume</h3>
 					<p>
 						<a 
-							href="https://drive.google.com/file/d/1Fo3gQBxN-UmQXu9Hfvuw8i13TCmwrcm7/view?usp=sharing" 
+							href="https://drive.google.com/file/d/1WHnYr8rX6vjwZWngk2EIpf2dFZqwZ3Sv/view?usp=sharing" 
 							style="text-decoration: none; color: #007bff; transition: all 0.3s ease;"
 							onmouseover="this.style.textShadow='0 0 50px rgba(0, 123, 255, 0.7)';" 
 							onmouseout="this.style.textShadow='none';"
@@ -975,7 +978,56 @@
    </div>
  </section>
 
+ <section id="rating-section" style="padding: 40px 0; background-color: #000000;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 style="margin-bottom: 20px; color: #ffffff;">Rate My Work</h2>
+                <div class="rating" style="display: inline-block;">
+                    <a href="#" onclick="setRating(1)" style="text-decoration: none;">
+                        <span class="fa fa-star" data-rating="1" style="font-size: 4rem; color: #ccc; transition: color 0.3s, text-shadow 0.3s, transform 0.3s; display: inline-block; cursor: pointer;"></span>
+                    </a>
+                    <a href="#" onclick="setRating(2)" style="text-decoration: none;">
+                        <span class="fa fa-star" data-rating="2" style="font-size: 4rem; color: #ccc; transition: color 0.3s, text-shadow 0.3s, transform 0.3s; display: inline-block; cursor: pointer;"></span>
+                    </a>
+                    <a href="#" onclick="setRating(3)" style="text-decoration: none;">
+                        <span class="fa fa-star" data-rating="3" style="font-size: 4rem; color: #ccc; transition: color 0.3s, text-shadow 0.3s, transform 0.3s; display: inline-block; cursor: pointer;"></span>
+                    </a>
+                    <a href="#" onclick="setRating(4)" style="text-decoration: none;">
+                        <span class="fa fa-star" data-rating="4" style="font-size: 4rem; color: #ccc; transition: color 0.3s, text-shadow 0.3s, transform 0.3s; display: inline-block; cursor: pointer;"></span>
+                    </a>
+                    <a href="#" onclick="setRating(5)" style="text-decoration: none;">
+                        <span class="fa fa-star" data-rating="5" style="font-size: 4rem; color: #ccc; transition: color 0.3s, text-shadow 0.3s, transform 0.3s; display: inline-block; cursor: pointer;"></span>
+                    </a>
+                </div>
+                <br><br><br>
+                <!--<button onclick="submitRating()" style="color: white; background-color: #ff9d00; border: none; border-radius: 30px; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 0 20px rgba(255, 252, 252, 0.811);"
+							onmouseover="this.style.backgroundColor='#0056b3'; this.style.boxShadow='0 0 20px rgba(0, 123, 255, 0.7)';" 
+							onmouseout="this.style.backgroundColor='#007bff'; this.style.boxShadow='0 0 10px rgba(0, 0, 0, 0.2)';"
+							>Submit Rating</button>
+                <p id="result" style="color: #ffffff;"></p>!-->		
+            </div>
+        </div>
+    </div>
+</section>
 
+<div class="container">
+	<div class="row justify-content-center">
+	  <div class="col-md-10 heading-section text-center ftco-animate">
+		<h1 class="big big-2"
+			style="transition: all 0.3s ease; text-shadow: 0 0 10px rgba(255, 191, 0, 0.84);"
+			onmouseover="this.style.textShadow='0 0 20px rgba(0, 123, 255, 0.7)';"
+			onmouseout="this.style.textShadow='0 0 10px rgba(255, 191, 0, 0.84)';"
+		>
+		  Thank You !
+		</h1>
+		<br>
+		<h2 class="mb-4">Thank You !</h2>
+		<br><br>
+	  </div>
+	</div>
+  </div>
+  
  
 <!-- footer-->
     <footer class="ftco-footer ftco-section">
@@ -983,8 +1035,8 @@
 		  <div class="row">
 			<div class="col-md-12 text-center">
 			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https:" target="_blank"> @ Mr.Vishalpatil</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https:" target="_blank"> @ Mr.Vishalpatil</a>
+	            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 			</div>
 		  </div>
 		</div>
