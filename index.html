@@ -129,6 +129,92 @@
     transform: scale(1.1); /* Adjust the scale factor for the image on hover */
   }
 
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+:root {
+    --primary-color: #00bcd4;
+    --secondary-color: #ff9800;
+    --text-color: #9c9898;
+    --bg-color: #000000;
+    --padding: 20px;
+    --margin: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.heading-section h1, .heading-section h2 {
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.84);
+    transition: text-shadow 0.3s ease;
+}
+
+.heading-section h1:hover {
+    text-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
+}
+
+.resume-wrap {
+    padding: var(--padding);
+    background: var(--bg-color);
+    border-radius: 5px;
+    margin: var(--margin);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.position {
+    color: var(--primary-color);
+}
+
+.date {
+    color: var(--secondary-color);
+}
+
+h2 span {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    text-shadow: 0 0 5px #fff200, 0 0 10px #a6ff00, 0 0 15px #00e1ff, 0 0 20px #ff0000, 0 0 30px #00bbff, 0 0 40px #0048ff, 0 0 50px #a600ff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-6 {
+    flex: 0 0 48%;
+    margin-bottom: var(--margin);
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+    }
+}
+
+
+
 	
 0% {
       text-shadow: 0 0 5px #fff200, 0 0 10px #a6ff00, 0 0 15px #00e1ff, 0 0 20px #00ffff, 0 0 30px #00bbff, 0 0 40px #0048ff, 0 0 50px #a600ff;
@@ -151,7 +237,6 @@
   transform: scale(1.1);
 }
 
-
 </style>
 
 
@@ -173,6 +258,14 @@
 			  <li class="nav-item"><a href="#resume-section" class="nav-link" style="transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#ff007f';" onmouseout="this.style.color='';"><span>Resume</span></a></li>
 			  <li class="nav-item"><a href="#project-section" class="nav-link" style="transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#ff007f';" onmouseout="this.style.color='';"><span>Projects</span></a></li>
 			  <li class="nav-item"><a href="#contact-section" class="nav-link" style="transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#ff007f';" onmouseout="this.style.color='';"><span>Contact</span></a></li>
+
+			  <div class="relative">
+				<input type="checkbox" id="theme-toggle" class="sr-only peer" />
+				<div class="block bg-gray-600 w-14 h-8 rounded-full"> vishal</div>
+				<div class="dot absolute left-1 top-1 bg-white w-6 h-6 ~ounded-full transition-transform
+				peer-checked: translate-x-6"></div>
+			  </div>
+
 			  <br>
 			  <div class="underline"></div>
 			</ul>
@@ -517,98 +610,91 @@
 			
 			<div class="row justify-content-center mb-5 pb-5">
 				<div class="col-md-6 heading-section text-center ftco-animate">
-					<h1 class="big big-2"
-						style="transition: all 0.3s ease; text-shadow: 0 0 10px rgba(0, 123, 255, 0.84);"
+					<h1 class="big big-2" style="transition: all 0.3s ease; text-shadow: 0 0 10px rgba(0, 123, 255, 0.84);"
 						onmouseover="this.style.textShadow='0 0 20px rgba(0, 123, 255, 0.7)';"
-						onmouseout="this.style.textShadow='0 0 10px rgba(0, 123, 255, 0.7)';"
-					>
-					Experience
+						onmouseout="this.style.textShadow='0 0 10px rgba(0, 123, 255, 0.7)';">
+						Experience
 					</h1><br>
 					<h2 class="mb-4">Experience</h2>
 				</div>
 			</div>
 			<div class="underline"></div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-				  
-				  <h2 style="position: relative; display: inline-block;">
-					<span id="internshipTitle" style="position: relative; display: inline-block; font-size: 1.5em; color: #ff9800; text-shadow: 0 0 5px #fff200, 0 0 10px #a6ff00, 0 0 15px #00e1ff, 0 0 20px #ff0000, 0 0 30px #00bbff, 0 0 40px #0048ff, 0 0 50px #a600ff;">Full Stack Intern (Trainee)</span>
-					<script>
-					  setInterval(() => {
-						const colors = ['#ff9800', '#00bcd4', '#4caf50', '#ff5722','#00e1ff','#fff200']; // Add more colors as needed
-						const randomColor = colors[Math.floor(Math.random() * colors.length)];
-						document.getElementById('internshipTitle').style.color = randomColor;
-					  }, 100); // Change color every 100ms (adjust as needed)
-					</script>
-				  </h2>
-				  <span class="position" style="color: #00bcd4;">Numetry Technologies IT Services and IT Consulting, pune</span>
-				  <br>
-				  <span class="date">2024</span>
-				  <p class="mt-4">Co-developed an online course platform with a team using React.js and MySQL at Numetry Technologies, resulting in a 30% increase in user engagement and a 20% improvement in learning outcomes. while leveraging full-stack development skills to enhance overall system performance and user experience.</p>
-				  
+			<br>
+			<div class="row">
+				<div class="col-md-6 d-flex align-items-stretch">
+					<div class="resume-wrap ftco-animate" style="flex: 1; padding: 20px; box-sizing: border-box; background: #f8f9fa23; border-radius: 5px; margin: 10px;">
+						<h2 style="position: relative; display: inline-block;">
+							<span id="internshipTitle"
+								style="position: relative; display: inline-block; font-size: 1.5em; color: #ff9800; text-shadow: 0 0 5px #fff200, 0 0 10px #a6ff00, 0 0 15px #00e1ff, 0 0 20px #ff0000, 0 0 30px #00bbff, 0 0 40px #0048ff, 0 0 50px #a600ff;">
+								Full Stack Intern (Trainee)
+							</span>
+							<script>
+								setInterval(() => {
+									const colors = ['#ff9800', '#00bcd4', '#4caf50', '#ff5722', '#00e1ff', '#fff200'];
+									const randomColor = colors[Math.floor(Math.random() * colors.length)];
+									document.getElementById('internshipTitle').style.color = randomColor;
+								}, 100);
+							</script>
+						</h2>
+						<span class="position" style="color: #00bcd4;">Numetry Technologies IT Services and IT Consulting, Pune</span>
+						<br>
+						<span class="date">2024</span>
+						<p class="mt-4">Co-developed an online course platform with a team using React.js and MySQL at Numetry Technologies, resulting in a 30% increase in user engagement and a 20% improvement in learning outcomes. while leveraging full-stack development skills to enhance overall system performance and user experience.</p>
+					</div>
 				</div>
-			  </div>
-			  
-			  <div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-				  
-				  <br>
-				  <h2 style="position: relative; display: inline-block;">
-					<span id="internTitle" style="position: relative; display: inline-block; font-size: 1.5em; color: #ff9800; text-shadow: 0 0 5px #fff200, 0 0 10px #a6ff00, 0 0 15px #00e1ff, 0 0 20px #ff0000, 0 0 30px #00bbff, 0 0 40px #0048ff, 0 0 50px #a600ff;">Full Stack Intern</span>
-					<script>
-					  setInterval(() => {
-						const colors = ['#ff9800', '#00bcd4', '#4caf50', '#ff5722','#00e1ff','#fff200']; // Add more colors as needed
-						const randomColor = colors[Math.floor(Math.random() * colors.length)];
-						document.getElementById('internTitle').style.color = randomColor;
-					  }, 100); // Change color every 100ms (adjust as needed)
-					</script>
-				  </h2>
-				  <br>
-				  <span class="position" style="display: block; color: #00bcd4;">Qynext Softech Services pvt. ltd, pune</span><br>
-				  <span class="date">2021 - 22  &amp;  2024</span>
-				  <p class="mt-4">During my BSc final semester, I developed an online course platform using React.js and MySQL in collaboration with Qynext Softech Services during an internship. This project led to a 30% increase in user engagement and significant enhancements in learning outcomes, alongside improvements in document management efficiency and information access across departments.</p>
-				</div>
-			  </div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-					
-					<h2>Data Entry Specialist</h2>
-					<span class="position">FirstCry Industry (Chakan)</span><br>
-					<span class="date">2018</span>
-					<p class="mt-4">Improved database reliability and reduced data entry errors by 40% over 5 months through precise data entry and error correction in collaboration with QC and audit teams.leading to improved efficiency across departments.</p>
+				<div class="col-md-6 d-flex align-items-stretch">
+					<div class="resume-wrap ftco-animate" style="flex: 1; padding: 20px; box-sizing: border-box; background: #f8f9fa23; border-radius: 5px; margin: 10px;">
+						<h2 style="position: relative; display: inline-block;">
+							<span id="internTitle"
+								style="position: relative; display: inline-block; font-size: 1.5em; color: #ff9800; text-shadow: 0 0 5px #fff200, 0 0 10px #a6ff00, 0 0 15px #00e1ff, 0 0 20px #ff0000, 0 0 30px #00bbff, 0 0 40px #0048ff, 0 0 50px #a600ff;">
+								Full Stack Intern
+							</span>
+							<script>
+								setInterval(() => {
+									const colors = ['#ff9800', '#00bcd4', '#4caf50', '#ff5722', '#00e1ff', '#fff200'];
+									const randomColor = colors[Math.floor(Math.random() * colors.length)];
+									document.getElementById('internTitle').style.color = randomColor;
+								}, 100);
+							</script>
+						</h2>
+						<br>
+						<span class="position" style="display: block; color: #00bcd4;">Qynext Softech Services Pvt. Ltd, Pune</span><br>
+						<span class="date">2021 - 22 &amp; 2024</span>
+						<p class="mt-4">During my BSc final semester, I developed an online course platform using React.js and MySQL in collaboration with Qynext Softech Services during an internship. This project led to a 30% increase in user engagement and significant enhancements in learning outcomes, alongside improvements in document management efficiency and information access across departments.</p>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-					
-					<h2>Order Processing Specialist</h2>
-					<span class="position">Yashwant Abrasives (Chakan)</span><br>
-					<span class="date">2019</span>
-					<p class="mt-4">Improved order accuracy to 95% by streamlining processes.
-						Reduced processing time by 10% over nine months.
-						Ensured efficient and accurate order handling.
-						Demonstrated exceptional organizational and problem-solving skills.</p>
+			<br>
+			<div class="row">
+				<div class="col-md-6 d-flex align-items-stretch">
+					<div class="resume-wrap ftco-animate" style="flex: 1; padding: 20px; box-sizing: border-box; background: #f8f9fa23; border-radius: 5px; margin: 10px;">
+						<h2>Data Entry Specialist</h2>
+						<span class="position">FirstCry Industry (Chakan)</span><br>
+						<span class="date">2018</span>
+						<p class="mt-4">Improved database reliability and reduced data entry errors by 40% over 5 months through precise data entry and error correction in collaboration with QC and audit teams. leading to improved efficiency across departments.</p>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex align-items-stretch">
+					<div class="resume-wrap ftco-animate" style="flex: 1; padding: 20px; box-sizing: border-box; background: #f8f9fa23; border-radius: 5px; margin: 10px;">
+						<h2>Order Processing Specialist</h2>
+						<span class="position">Yashwant Abrasives (Chakan)</span><br>
+						<span class="date">2019</span>
+						<p class="mt-4">Improved order accuracy to 95% by streamlining processes. Reduced processing time by 10% over nine months. Ensured efficient and accurate order handling. Demonstrated exceptional organizational and problem-solving skills.</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-					
-					<h2>Machine Coordinator</h2>
-					<span class="position">Britannia Industries Ltd (Ranjangaon)</span><br>
-					<span class="date">2019</span>
-					<p class="mt-4">Executed comprehensive quality control processes to ensure adherence to product standards, resulting in consistent product quality. Collaborated with cross-functional teams to identify and rectify potential issues proactively. Implemented regular audits and feedback loops to maintain high-quality benchmarks and continuously improve processes.</p>
+			<br>
+			<div class="row">
+				<div class="col-md-6 d-flex align-items-stretch">
+					<div class="resume-wrap ftco-animate" style="flex: 1; padding: 20px; box-sizing: border-box; background: #f8f9fa23; border-radius: 5px; margin: 10px;">
+						<h2>Machine Coordinator</h2>
+						<span class="position">Britannia Industries Ltd (Ranjangaon)</span><br>
+						<span class="date">2019</span>
+						<p class="mt-4">Executed comprehensive quality control processes to ensure adherence to product standards, resulting in consistent product quality. Collaborated with cross-functional teams to identify and rectify potential issues proactively. Implemented regular audits and feedback loops to maintain high-quality benchmarks and continuously improve processes.</p>
+					</div>
 				</div>
 			</div>
-		</div>
+			
 		<br>
 		<br>
 		
