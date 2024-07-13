@@ -141,7 +141,7 @@
 :root {
     --primary-color: #00bcd4;
     --secondary-color: #ff9800;
-    --text-color: #9c9898;
+    --text-color: #bbb7b7;
     --bg-color: #000000;
     --padding: 20px;
     --margin: 10px;
@@ -213,6 +213,26 @@ h2 span {
     }
 }
 
+.glass-effect {
+    /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    /* Apply the backdrop filter for the blur effect */
+    backdrop-filter: blur(10px);
+    
+    /* Optionally, you can add a border to enhance the glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    /* Add border-radius for rounded corners */
+    border-radius: 10px;
+    
+    /* Add padding for some spacing */
+    padding: 20px;
+    
+    /* Add box-shadow for a subtle shadow effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 
 	
@@ -261,7 +281,7 @@ h2 span {
 
 			  <div class="relative">
 				<input type="checkbox" id="theme-toggle" class="sr-only peer" />
-				<div class="block bg-gray-600 w-14 h-8 rounded-full"> vishal</div>
+				<div class="block bg-gray-600 w-14 h-8 rounded-full"> </div>
 				<div class="dot absolute left-1 top-1 bg-white w-6 h-6 ~ounded-full transition-transform
 				peer-checked: translate-x-6"></div>
 			  </div>
@@ -597,15 +617,12 @@ h2 span {
 					</h1><br>
 					<h2 class="mb-4">Resume</h2>
 					<br><br>
-					<p>
+					<p class="glass-effect"onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';" onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">
 						I am Vishal Patil, a dedicated Full Stack Developer with a strong academic background in computer science, holding an MCA and a BCS. With proficiency in C, C++, Java, Python, HTML, CSS, JavaScript, and SQL, I have successfully developed various projects including an Online Document Sharing System and a Face Recognition System for Attendance Management. My professional experience includes enhancing database reliability and improving order accuracy in industry roles. I am passionate about leveraging technology to solve real-world problems and committed to continuous learning and growth in the field.
 					</p>
 				</div>
 			</div>
 			
-			
-			
-
 		<div class="">
 			
 			<div class="row justify-content-center mb-5 pb-5">
@@ -622,7 +639,7 @@ h2 span {
 			<br>
 			<div class="row">
 				<div class="col-md-6 d-flex align-items-stretch">
-					<div class="resume-wrap ftco-animate" style="flex: 1; padding: 20px; box-sizing: border-box; background: #f8f9fa23; border-radius: 5px; margin: 10px;">
+					<div class="resume-wrap ftco-animate" style="flex: 1; padding: 20px; box-sizing: border-box; background: #f8f9fa39; border-radius: 5px; margin: 10px;"onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';" onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">
 						<h2 style="position: relative; display: inline-block;">
 							<span id="internshipTitle"
 								style="position: relative; display: inline-block; font-size: 1.5em; color: #ff9800; text-shadow: 0 0 5px #fff200, 0 0 10px #a6ff00, 0 0 15px #00e1ff, 0 0 20px #ff0000, 0 0 30px #00bbff, 0 0 40px #0048ff, 0 0 50px #a600ff;">
@@ -643,7 +660,7 @@ h2 span {
 					</div>
 				</div>
 				<div class="col-md-6 d-flex align-items-stretch">
-					<div class="resume-wrap ftco-animate" style="flex: 1; padding: 20px; box-sizing: border-box; background: #f8f9fa23; border-radius: 5px; margin: 10px;">
+					<div class="resume-wrap ftco-animate" style="flex: 1; padding: 20px; box-sizing: border-box; background: #f8f9fa39; border-radius: 5px; margin: 10px;"onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';" onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">
 						<h2 style="position: relative; display: inline-block;">
 							<span id="internTitle"
 								style="position: relative; display: inline-block; font-size: 1.5em; color: #ff9800; text-shadow: 0 0 5px #fff200, 0 0 10px #a6ff00, 0 0 15px #00e1ff, 0 0 20px #ff0000, 0 0 30px #00bbff, 0 0 40px #0048ff, 0 0 50px #a600ff;">
@@ -658,7 +675,7 @@ h2 span {
 							</script>
 						</h2>
 						<br>
-						<span class="position" style="display: block; color: #00bcd4;">Qynext Softech Services Pvt. Ltd, Pune</span><br>
+						<span class="position" style="display: block; color: #00bcd4;"onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';" onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">Qynext Softech Services Pvt. Ltd, Pune</span><br>
 						<span class="date">2021 - 22 &amp; 2024</span>
 						<p class="mt-4">During my BSc final semester, I developed an online course platform using React.js and MySQL in collaboration with Qynext Softech Services during an internship. This project led to a 30% increase in user engagement and significant enhancements in learning outcomes, alongside improvements in document management efficiency and information access across departments.</p>
 					</div>
@@ -667,7 +684,7 @@ h2 span {
 			<br>
 			<div class="row">
 				<div class="col-md-6 d-flex align-items-stretch">
-					<div class="resume-wrap ftco-animate" style="flex: 1; padding: 20px; box-sizing: border-box; background: #f8f9fa23; border-radius: 5px; margin: 10px;">
+					<div class="resume-wrap ftco-animate" style="flex: 1; padding: 20px; box-sizing: border-box; background: #f8f9fa39; border-radius: 5px; margin: 10px;"onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';" onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">
 						<h2>Data Entry Specialist</h2>
 						<span class="position">FirstCry Industry (Chakan)</span><br>
 						<span class="date">2018</span>
@@ -675,7 +692,7 @@ h2 span {
 					</div>
 				</div>
 				<div class="col-md-6 d-flex align-items-stretch">
-					<div class="resume-wrap ftco-animate" style="flex: 1; padding: 20px; box-sizing: border-box; background: #f8f9fa23; border-radius: 5px; margin: 10px;">
+					<div class="resume-wrap ftco-animate" style="flex: 1; padding: 20px; box-sizing: border-box; background: #f8f9fa39; border-radius: 5px; margin: 10px;"onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';" onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">
 						<h2>Order Processing Specialist</h2>
 						<span class="position">Yashwant Abrasives (Chakan)</span><br>
 						<span class="date">2019</span>
@@ -686,7 +703,7 @@ h2 span {
 			<br>
 			<div class="row">
 				<div class="col-md-6 d-flex align-items-stretch">
-					<div class="resume-wrap ftco-animate" style="flex: 1; padding: 20px; box-sizing: border-box; background: #f8f9fa23; border-radius: 5px; margin: 10px;">
+					<div class="resume-wrap ftco-animate" style="flex: 1; padding: 20px; box-sizing: border-box; background: #f8f9fa39; border-radius: 5px; margin: 10px;"onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';" onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">
 						<h2>Machine Coordinator</h2>
 						<span class="position">Britannia Industries Ltd (Ranjangaon)</span><br>
 						<span class="date">2019</span>
@@ -716,6 +733,8 @@ h2 span {
 			<div class="underline"></div>
 		</div>
 		<br>
+
+	<div class="glass-effect">
 		<div class="row">
 			<div class="col-md-6">
 				<div class="resume-wrap ftco-animate">
@@ -726,6 +745,7 @@ h2 span {
 				</div>
 			</div>
 		
+		
 			<div class="col-md-6">
 				<div class="resume-wrap ftco-animate">
 					<span class="date">2019-2022</span>
@@ -735,6 +755,7 @@ h2 span {
 				</div>
 			</div>
 		</div>
+	</div>
 		<br>
 		<div class="row justify-content-center mt-5">
 			<div class="col-md-6 text-center ftco-animate">
@@ -788,8 +809,6 @@ h2 span {
 					  <p>Designed and implemented an efficient Online Document Sharing System using HTML, CSS, Bootstrap, PHP, Node.js, and MySQL.</p>
 					</div>
 				  </div>
-				  
-
 			</div>
 			
 			<div class="col-md-4 d-flex ftco-animate">
@@ -841,10 +860,6 @@ h2 span {
 				  </div>
 				</div>
 			  </div>
-			  
-			  
-			  
-
 		  </div>
 		  <br>
 		</div>
@@ -852,50 +867,59 @@ h2 span {
 	  
 	  
 <!-- Achivments sub -->
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-		<div class="container">
-			<div class="row d-md-flex align-items-center">
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-							<strong class="number" data-number="10">0</strong>
-							<span>Achievements</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-							<strong class="number" data-number="10">0</strong>
-							<span>Projects</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-							<strong class="number" data-number="4">0</strong>
-							<span>Worked with Companies</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-							<strong class="number" data-number="50">0</strong>
-							<span>Cups of coffee</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter" style="padding: 20px 0;border-radius: 30%; ">
+    <div class="container">
+        <div class="row" style="display: flex; flex-wrap: wrap; margin: 10px;">
+            <div class="col-6 col-md-3" style="padding: 5px;border-radius: 20%;">
+                <div class="counter-wrap ftco-animate" style="background-color: #707070; border-radius: 20px; padding: 20px; text-align: center; height: 50%;box-shadow: 0 4px 6px rgba(255, 247, 247, 0.874); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';" onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">
+                    <div class="block-18">
+                        <div class="text">
+                            <strong class="number" data-number="10" style="font-size: 2rem; font-weight: bold; display: block; margin-bottom: 10px;">0</strong>
+                            <span style="font-size: 0.9rem; display: block;">Achievements</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3" style="padding: 5px;border-radius: 20%;">
+                <div class="counter-wrap ftco-animate" style="background-color: #707070; border-radius: 20px; padding: 20px; text-align: center; height: 50%;box-shadow: 0 4px 6px rgba(255, 247, 247, 0.874); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';" onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">
+                    <div class="block-18">
+                        <div class="text">
+                            <strong class="number" data-number="10" style="font-size: 2rem; font-weight: bold; display: block; margin-bottom: 10px;">0</strong>
+                            <span style="font-size: 0.9rem; display: block;">Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3" style="padding: 5px;border-radius: 20%;">
+                <div class="counter-wrap ftco-animate" style="background-color: #707070; border-radius: 20px; padding: 20px; text-align: center; height: 50%;box-shadow: 0 4px 6px rgba(255, 247, 247, 0.874); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';" onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">
+                    <div class="block-18">
+                        <div class="text">
+                            <strong class="number" data-number="4" style="font-size: 2rem; font-weight: bold; display: block; margin-bottom: 10px;">0</strong>
+                            <span style="font-size: 0.9rem; display: block;">Worked with Companies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3" style="padding: 5px;border-radius: 20%;">
+                <div class="counter-wrap ftco-animate" style="background-color: #707070; border-radius: 20px; padding: 20px; text-align: center; height: 50%;box-shadow: 0 4px 6px rgba(255, 247, 247, 0.874); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';" onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">
+                    <div class="block-18">
+                        <div class="text">
+                            <strong class="number" data-number="20" style="font-size: 2rem; font-weight: bold; display: block; margin-bottom: 10px;">0</strong>
+                            <span style="font-size: 0.9rem; display: block;">Cups of coffee</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 		
 	
 	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
 			<!-- <div class="container"> -->
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
-						<h2>More on<span> Github  </span> </h2>
+						<h2>More on <span> Github  </span> </h2>
 						<div class="heading">
 							<h4>I love to solve business problems &amp; uncover hidden data stories</h4>
 							<br>
