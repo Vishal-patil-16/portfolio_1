@@ -245,27 +245,27 @@ h2 span {
 @keyframes glowing {
     0% {
         color: #ff0000;
-        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000;
+        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000;
     }
     20% {
         color: #ff00ff;
-        text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
+        text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff;
     }
     40% {
         color: #0000ff;
-        text-shadow: 0 0 5px #0000ff, 0 0 10px #0000ff, 0 0 15px #0000ff, 0 0 20px #0000ff;
+        text-shadow: 0 0 5px #0000ff, 0 0 10px #0000ff, 0 0 15px #0000ff;
     }
     60% {
         color: #00ffff;
-        text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff, 0 0 20px #00ffff;
+        text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff;
     }
     80% {
         color: #00ff00;
-        text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00;
+        text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
     }
     100% {
         color: #ffff00;
-        text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00, 0 0 20px #ffff00;
+        text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00;
     }
 }
 
@@ -335,8 +335,10 @@ h2 span {
                     background-image: url(images/bg_a.png); /* Background image URL */
                     background-size: cover; /* Cover ensures the image covers the entire area */
                     background-position: center; /* Center the background image */
+                    border-radius: 40px;
                     transition: all 0.3s ease; /* Smooth transition effects */
                     padding-top: 80%; /* Maintain aspect ratio for a square-ish shape */
+                    
                     position: relative; /* Ensure the image is positioned relative to its parent */
                  "
              onmouseover="
@@ -352,12 +354,12 @@ h2 span {
         </div>
 
         <!-- Content Section -->
-        <section id="home-section" class="hero col-md-6">
+        <section id="home-section" class="hero col-md-6 ">
             <div class="home-slider owl-carousel">
                 <div class="slider-item">
                     <!-- Overlay for text readability -->
                     <div class="overlay"></div>
-                    <div class="container">
+                    <div class="container ">
                         <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
                             <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }" style="padding: 10px;">
                                 <div class="text">
@@ -367,10 +369,11 @@ h2 span {
                                     <span class="subheading"><h2>Hello!</h2></span>
                                     <!-- Main heading with glowing effect -->
                                     <h1 class="mb-4 mt-3">
-                                        <span id="name-glow" style="color: #ff9800; text-shadow: 0 0 5px #ff5900, 0 0 15px #ff0000; position: relative; display: inline-block; font-size: 2em; animation: floating 5s infinite;">
+                                        <span id="name-glow" style="color: #ff9800; text-shadow: 0 0 5px #ff5900, 0 0 15px #1561d2; position: relative; display: inline-block; font-size: 2em; animation: floating 3s infinite; font-family: Georgia, serif;">
                                             Vishal Patil
                                         </span>
                                     </h1>
+                                    
 
                                     <!-- Element to contain animated typing -->
                                     <span id="typing-animation"></span>
@@ -430,27 +433,26 @@ h2 span {
                                     <!-- Additional vertical spacing -->
 									<br><br>
 									<!-- Subtitle with white glow effect -->
-									<h2 style="color: #eb930e; text-shadow: 0 0 10px #ff1e00, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #04ebfb;">
-										A Developer
+									<h2 style= " font-family: Georgia, serif; color: #eb790e; text-shadow: 0 0 10px #ff1e00, 0 0 20px #ffffff, 0 0 40px #04ebfb;">
+										Coding :
 									</h2>
 									<!-- Additional vertical spacing -->
 									
-                                    <h2 style="color: #ffffff; text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff,  0 0 50px #ffffff;">
-										Where.
+                                    <h2 style=" font-family: Georgia, serif; color: #ffffff; text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;">
+										
 									</h2>
 									<!-- Subtitle with white glow effect -->
-									<h2 style="color: #ffffff; text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff,  0 0 50px #ffffff;">
-									    Logic Becomes
-									</h2>
+									<h4 style=" font-family: Georgia, serif; color: #ffffff; text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;">
+									    Where Logic Becomes
+                                        
+									</h4>
                                     <!-- Subtitle with white glow effect -->
                                      
-                                    <h2 style="color: #ffffff; text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff,  0 0 50px #ffffff;">
-									    Magic.
+                                    <h2 style=" font-family: Georgia, serif; color: #ffcc00; text-shadow: 0 0 10px #ee3333, 0 0 20px #32ff04, 0 0 30px #00a2ff;">
+									    - Magic
 									</h2>
 									<!-- Additional vertical spacing -->
 									<br><br><br>
-									
-
                                 </div>								
                             </div>
                         </div>
@@ -890,12 +892,14 @@ h2 span {
             <!-- Horizontal Line -->
             <div class="underline"></div>
             <br>
-            <!-- Experience Items -->
+            <!-- Experience Items
+             
+            -->
             <div class="row glass-effect">
                 <!-- First Experience Item -->
                 <div class="col-md-6 d-flex align-items-center">
                     <div class="resume-wrap ftco-animate"
-                        style="flex: 1; padding: 20px; box-sizing: border-box; background: #00000039; border-radius: 5px; margin: 10px;"
+                        style="flex: 1; padding: 20px; box-sizing: border-box; background: #000000ea; border-radius: 5px; margin: 10px;"
                         onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';"
                         onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">
                         <!-- Job Title with Dynamic Color -->
@@ -921,10 +925,11 @@ h2 span {
                         <p class="mt-4">Co-developed an online course platform with a team using React.js and MySQL at Numetry Technologies, resulting in a 30% increase in user engagement and a 20% improvement in learning outcomes while leveraging full-stack development skills to enhance overall system performance and user experience.</p>
                     </div>
                 </div>
+                
                 <!-- Second Experience Item -->
                 <div class="col-md-6 d-flex align-items-stretch">
                     <div class="resume-wrap ftco-animate"
-                        style="flex: 1; padding: 20px; box-sizing: border-box; background: #00000039; border-radius: 5px; margin: 10px;"
+                        style="flex: 1; padding: 20px; box-sizing: border-box; background: #000000ea; border-radius: 5px; margin: 10px;"
                         onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';"
                         onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">
                         <!-- Job Title with Dynamic Color -->
@@ -958,7 +963,7 @@ h2 span {
                 <!-- Third Experience Item -->
                 <div class="col-md-6 d-flex align-items-stretch">
                     <div class="resume-wrap ftco-animate"
-                        style="flex: 1; padding: 20px; box-sizing: border-box; background: #00000039; border-radius: 5px; margin: 10px;"
+                        style="flex: 1; padding: 20px; box-sizing: border-box; background: #000000ea; border-radius: 5px; margin: 10px;"
                         onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';"
                         onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">
                         <!-- Job Title -->
@@ -972,7 +977,7 @@ h2 span {
                 <!-- Fourth Experience Item -->
                 <div class="col-md-6 d-flex align-items-stretch">
                     <div class="resume-wrap ftco-animate"
-                        style="flex: 1; padding: 20px; box-sizing: border-box; background: #00000039; border-radius: 5px; margin: 10px;"
+                        style="flex: 1; padding: 20px; box-sizing: border-box; background: #000000ea; border-radius: 5px; margin: 10px;"
                         onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';"
                         onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">
                         <!-- Job Title -->
@@ -990,7 +995,7 @@ h2 span {
                 <!-- Third Experience Item -->
                 <div class="col-md-6 d-flex align-items-stretch">
                     <div class="resume-wrap ftco-animate"
-                        style="flex: 1; padding: 20px; box-sizing: border-box; background: #00000039; border-radius: 5px; margin: 10px;"
+                        style="flex: 1; padding: 20px; box-sizing: border-box; background: #000000ea; border-radius: 5px; margin: 10px;"
                         onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)';"
                         onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)';">
                         <!-- Job Title -->
@@ -1042,41 +1047,39 @@ h2 span {
                 <br><br>
             </div> 
             <!-- Education Items -->
-            <div class="glass-effect">
+            <div class="glass-effect" style="background: rgba(255, 255, 255, 0.2); border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
                 <div class="row">
                     <!-- First Education Item -->
                     <div class="col-md-6">
-                        <div class="resume-wrap ftco-animate">
+                        <div class="resume-wrap ftco-animate" style="transition: box-shadow 0.3s;">
                             <span class="date">2022 - 2024</span>
                             <h2>Master of Computer Application</h2>
-                            <span class="position">R.C. Patel Edu Trusts Institute of Management Research and Development</span>
+                            <span class="position">R.C. Patel Edu Trusts Institute of Management Research and  <br> Development</span>
                             <p class="mt-4">Shirpur</p>
                         </div>
                     </div>
                     <!-- Second Education Item -->
                     <div class="col-md-6">
-                        <div class="resume-wrap ftco-animate">
+                        <div class="resume-wrap ftco-animate" style="transition: box-shadow 0.3s;">
                             <span class="date">2019 - 2022</span>
                             <h2>Bachelor of Computer Science</h2>
                             <span class="position">Moolji Jaitha College, Khandesh College Education <br> Society</span>
                             <p class="mt-4">Jalgaon</p>
                         </div>
                     </div>
-					<div class="col-md-6">
-                        <div class="resume-wrap ftco-animate">
-                            <span class="date">20118</span>
+                    <div class="col-md-6">
+                        <div class="resume-wrap ftco-animate" style="transition: box-shadow 0.3s;">
+                            <span class="date">2018</span>
                             <h2>12 th Central Board of Secondary Education </h2>
-                            <span class="position">Jawahar Navodaya Vidyalaya, Sakegaon, Bhusawal
-							</span>
+                            <span class="position">Jawahar Navodaya Vidyalaya, Sakegaon, Bhusawal</span>
                             <p class="mt-4">Jalgaon</p>
                         </div>
                     </div>
-					<div class="col-md-6">
-                        <div class="resume-wrap ftco-animate">
-                            <span class="date">20118</span>
+                    <div class="col-md-6">
+                        <div class="resume-wrap ftco-animate" style="transition: box-shadow 0.3s;">
+                            <span class="date">2018</span>
                             <h2>10 th Central Board of Secondary Education </h2>
-                            <span class="position">Jawahar Navodaya Vidyalaya, <br> Nakane 
-							</span>
+                            <span class="position">Jawahar Navodaya Vidyalaya, <br> Nakane</span>
                             <p class="mt-4">Dhule</p>
                         </div>
                     </div>
@@ -1131,7 +1134,7 @@ h2 span {
             <!-- Project 1 -->
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry justify-content-end"
-                    style="background: rgba(158, 178, 173, 0.534); border-radius: 10px; padding: 20px; backdrop-filter: blur(10px); box-shadow: 0 4px 6px rgba(255, 247, 247, 0.41); transition: all 0.3s ease;"
+                    style="background: rgba(39, 36, 36, 0.815); border-radius: 10px; padding: 20px; backdrop-filter: blur(10px); box-shadow: 0 4px 6px rgba(255, 247, 247, 0.41); transition: all 0.3s ease;"
                     onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)'"
                     onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)'">
                     <a href="https://github.com/Vishal-sawnat-16" class="block-20 zoom-effect"
@@ -1149,7 +1152,7 @@ h2 span {
             <!-- Project 2 -->
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry justify-content-end"
-                    style="background: rgba(158, 178, 173, 0.534); border-radius: 10px; padding: 20px; backdrop-filter: blur(10px); box-shadow: 0 4px 6px rgba(255, 247, 247, 0.41); transition: all 0.3s ease;"
+                    style="background: rgba(39, 36, 36, 0.815); border-radius: 10px; padding: 20px; backdrop-filter: blur(10px); box-shadow: 0 4px 6px rgba(255, 247, 247, 0.41); transition: all 0.3s ease;"
                     onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)'"
                     onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)'">
                     <a href="https://github.com/Vishal-sawnat-16" class="block-20 zoom-effect"
@@ -1167,7 +1170,7 @@ h2 span {
             <!-- Project 3 -->
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry"
-                    style="background: rgba(158, 178, 173, 0.534); border-radius: 10px; padding: 20px; backdrop-filter: blur(10px); box-shadow: 0 4px 6px rgba(255, 247, 247, 0.41); transition: all 0.3s ease;"
+                    style="background: rgba(39, 36, 36, 0.815); border-radius: 10px; padding: 20px; backdrop-filter: blur(10px); box-shadow: 0 4px 6px rgba(255, 247, 247, 0.41); transition: all 0.3s ease;"
                     onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)'"
                     onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)'">
                     <a href="https://github.com/Vishal-sawnat-16?tab=repositories" class="block-20 zoom-effect"
@@ -1188,7 +1191,7 @@ h2 span {
             <!-- Project 4 -->
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry justify-content-end"
-                    style="background: rgba(158, 178, 173, 0.534); border-radius: 10px; padding: 20px; backdrop-filter: blur(10px); box-shadow: 0 4px 6px rgba(255, 247, 247, 0.41); transition: all 0.3s ease;"
+                    style="background: rgba(39, 36, 36, 0.815); border-radius: 10px; padding: 20px; backdrop-filter: blur(10px); box-shadow: 0 4px 6px rgba(255, 247, 247, 0.41); transition: all 0.3s ease;"
                     onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)'"
                     onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)'">
                     <a href="https://github.com/Vishal-sawnat-16" class="block-20 zoom-effect"
@@ -1207,7 +1210,7 @@ h2 span {
             <!-- Project 5 -->
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry"
-                    style="background: rgba(158, 178, 173, 0.534); border-radius: 10px; padding: 20px; backdrop-filter: blur(10px); box-shadow: 0 4px 6px rgba(255, 247, 247, 0.874); transition: all 0.3s ease;"
+                    style="background: rgba(39, 36, 36, 0.815); border-radius: 10px; padding: 20px; backdrop-filter: blur(10px); box-shadow: 0 4px 6px rgba(255, 247, 247, 0.874); transition: all 0.3s ease;"
                     onmouseover="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41), 0 0 20px rgba(255, 255, 255, 0.9)'"
                     onmouseout="this.style.boxShadow='0 4px 6px rgba(255, 247, 247, 0.41)'">
                     <a href="https://github.com/Vishal-sawnat-16?tab=repositories" class="block-20 zoom-effect"

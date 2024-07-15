@@ -374,6 +374,14 @@ function submitRating() {
 	});
 }
 
+document.querySelectorAll('.resume-wrap').forEach(item => {
+	item.addEventListener('mouseover', () => {
+		item.style.boxShadow = '0 4px 20px rgba(0, 123, 255, 0.6)';
+	});
+	item.addEventListener('mouseout', () => {
+		item.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.1)';
+	});
+});
 
 
 })(jQuery);
